@@ -1,0 +1,213 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+button {
+  outline: none; }
+
+body header {
+  width: 100vw;
+  height: 88vh; }
+  body header .backgroundImg {
+    width: 100vw;
+    height: 88vh;
+    background: url("../imgs/driftCarOne.jpeg") 20% no-repeat/cover;
+    position: absolute;
+    z-index: -2; }
+  body header .headerWrapper {
+    width: 100vw;
+    height: 88vh;
+    position: absolute;
+    z-index: -1;
+    background: #41C4BF;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    clip-path: polygon(0 0, 35% 0, 57% 100%, 0% 100%); }
+  body header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; }
+    body header nav .logo img {
+      width: 5rem;
+      height: 5rem; }
+    body header nav .hamburgerMenu img {
+      width: 2.5rem;
+      height: 2.5rem; }
+  body header .centerWrapper {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 83.5%;
+    max-width: 38%;
+    padding: 1rem; }
+    body header .centerWrapper span {
+      color: #050401; }
+    body header .centerWrapper button {
+      background-color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      width: 9rem;
+      height: 2.5rem;
+      border: 3px solid black;
+      border-radius: 30px;
+      transition: all .4s ease-in-out; }
+    body header .centerWrapper button:hover {
+      transform: translate(0, -7px); }
+
+body .stats {
+  background: #30343f;
+  color: white;
+  width: 100vw;
+  height: 100%; }
+  body .stats .statsWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    padding: 1rem 0rem 1rem 1rem; }
+    body .stats .statsWrapper .statBlock {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(auto auto auto);
+      width: 100%;
+      margin-right: 1rem;
+      padding: 1rem 1rem 1rem 1rem; }
+      body .stats .statsWrapper .statBlock img {
+        grid-row: 1 / span 2;
+        align-self: center;
+        width: 2.5rem;
+        height: 2.5rem; }
+      body .stats .statsWrapper .statBlock h1 {
+        font-size: 1.2rem;
+        grid-column: 2 / span 5; }
+      body .stats .statsWrapper .statBlock p {
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 5;
+        font-size: 1.1rem;
+        color: lightgray; }
+
+body .prices {
+  width: 100vw;
+  text-align: center; }
+  body .prices h1 {
+    padding: 2rem 0rem 0rem 0rem; }
+  body .prices .pricingWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    place-items: center; }
+    body .prices .pricingWrapper .pricing {
+      padding: 1rem; }
+      body .prices .pricingWrapper .pricing table {
+        width: 57vh;
+        box-shadow: 2px 2px 20px 1px #a2a2a2;
+        border-collapse: collapse;
+        transition: all .4s ease-in-out; }
+      body .prices .pricingWrapper .pricing th, body .prices .pricingWrapper .pricing td {
+        height: 7.2vh; }
+      body .prices .pricingWrapper .pricing th {
+        font-size: 1.2rem;
+        background-color: #30343f;
+        color: white; }
+      body .prices .pricingWrapper .pricing td {
+        font-size: 1.1rem;
+        border-top: 2px solid rgba(162, 162, 162, 0.5); }
+      body .prices .pricingWrapper .pricing .top {
+        border: 0px solid black; }
+      body .prices .pricingWrapper .pricing table:hover {
+        transform: scale(1.05); }
+    body .prices .pricingWrapper .two th {
+      background-color: #41C4BF; }
+    body .prices .pricingWrapper button {
+      width: 45vh;
+      padding: .5rem;
+      color: #41C4BF;
+      border: 1px solid #41C4BF;
+      border-radius: 5px;
+      font-size: .8rem; }
+    body .prices .pricingWrapper button:hover {
+      color: white;
+      background-color: #41C4BF;
+      transition: all .4s ease; }
+
+body footer {
+  background-color: #30343f;
+  color: white;
+  width: 100vw;
+  padding: 4rem 0rem; }
+  body footer .footerTitle {
+    text-align: center; }
+    body footer .footerTitle h1 {
+      font-size: 1.3rem; }
+    body footer .footerTitle h3 {
+      color: #41C4BF;
+      font-size: 3rem; }
+  body footer .aboutSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    place-items: center;
+    margin-bottom: 4rem;
+    grid-gap: 3%; }
+    body footer .aboutSection h3 {
+      color: white; }
+    body footer .aboutSection .learnMore {
+      color: #41C4BF; }
+    body footer .aboutSection .about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 30vh; }
+      body footer .aboutSection .about img {
+        width: 3.5rem;
+        height: 3.5rem; }
+      body footer .aboutSection .about p {
+        width: 85vw; }
+    body footer .aboutSection .aboutOne:hover, body footer .aboutSection .aboutTwo:hover, body footer .aboutSection .aboutThree:hover {
+      background-color: #282B34;
+      transition: all .5s ease-out; }
+    body footer .aboutSection .aboutOne img {
+      width: 3rem;
+      height: 3rem; }
+    body footer .aboutSection .aboutTwo img {
+      width: 2.5rem;
+      height: 2.5rem; }
+    body footer .aboutSection .aboutThree img {
+      width: 4rem;
+      height: 4rem; }
+  body footer .footerBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    body footer .footerBottom nav {
+      width: 90vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 3px solid #BBBBBB;
+      color: #BBBBBB; }
+      body footer .footerBottom nav .telephone img {
+        height: 1.2rem;
+        width: 1.2rem; }
+      body footer .footerBottom nav .socialMedia img {
+        height: 1.3rem;
+        width: 1.3rem;
+        transition: all .3s ease-in-out; }
+      body footer .footerBottom nav .socialMediaIcon :hover {
+        transform: translate(-3px);
+        background-color: #41C4BF; }
+    body footer .footerBottom .navBottom {
+      text-align: center;
+      color: #BBBBBB; }
+    body footer .footerBottom p {
+      font-size: 1.1rem; }
