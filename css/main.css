@@ -71,13 +71,12 @@ body .stats {
   body .stats .statsWrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    padding: 1rem 0rem 1rem 1rem; }
+    padding: 2rem 2rem 2rem 2rem; }
     body .stats .statsWrapper .statBlock {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: repeat(auto auto auto);
       width: 100%;
-      margin-right: 1rem;
       padding: 1rem 1rem 1rem 1rem; }
       body .stats .statsWrapper .statBlock img {
         grid-row: 1 / span 2;
@@ -100,12 +99,12 @@ body .prices {
     padding: 2rem 0rem 0rem 0rem; }
   body .prices .pricingWrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     place-items: center; }
     body .prices .pricingWrapper .pricing {
       padding: 1rem; }
       body .prices .pricingWrapper .pricing table {
-        width: 57vh;
+        width: 85vw;
         box-shadow: 2px 2px 20px 1px #a2a2a2;
         border-collapse: collapse;
         transition: all .4s ease-in-out; }
@@ -125,7 +124,7 @@ body .prices {
     body .prices .pricingWrapper .two th {
       background-color: #41C4BF; }
     body .prices .pricingWrapper button {
-      width: 45vh;
+      width: 65%;
       padding: .5rem;
       color: #41C4BF;
       border: 1px solid #41C4BF;
