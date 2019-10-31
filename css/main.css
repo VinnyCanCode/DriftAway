@@ -70,7 +70,7 @@ body .stats {
   height: 100%; }
   body .stats .statsWrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     padding: 2rem 2rem 2rem 2rem; }
     body .stats .statsWrapper .statBlock {
       display: grid;
@@ -152,7 +152,8 @@ body footer {
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     place-items: center;
     margin-bottom: 4rem;
-    grid-gap: 3%; }
+    grid-gap: 3%;
+    padding: 1rem; }
     body footer .aboutSection h3 {
       color: white; }
     body footer .aboutSection .learnMore {
@@ -163,12 +164,11 @@ body footer {
       justify-content: center;
       align-items: center;
       text-align: center;
-      height: 30vh; }
+      height: 30vh;
+      padding: 1rem; }
       body footer .aboutSection .about img {
         width: 3.5rem;
         height: 3.5rem; }
-      body footer .aboutSection .about p {
-        width: 85vw; }
     body footer .aboutSection .aboutOne:hover, body footer .aboutSection .aboutTwo:hover, body footer .aboutSection .aboutThree:hover {
       background-color: #282B34;
       transition: all .5s ease-out; }
@@ -210,3 +210,25 @@ body footer {
       color: #BBBBBB; }
     body footer .footerBottom p {
       font-size: 1.1rem; }
+
+@media only screen and (min-width: 600px) {
+  body .stats .statsWrapper {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr)); }
+  body .prices .pricingWrapper {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr)); }
+    body .prices .pricingWrapper .pricing table {
+      width: 85vw; }
+  body footer .aboutSection {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-gap: 0; } }
+
+@media only screen and (min-width: 900px) {
+  body .stats .statsWrapper {
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); }
+  body .prices .pricingWrapper {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+    body .prices .pricingWrapper .pricing table {
+      width: 29vw; }
+  body footer .aboutSection {
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    grid-gap: 0; } }

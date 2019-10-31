@@ -1,0 +1,21 @@
+@media only screen and (min-width: 600px) {
+  body .stats .statsWrapper {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr)); }
+  body .prices .pricingWrapper {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr)); }
+    body .prices .pricingWrapper .pricing table {
+      width: 85vw; }
+  body footer .aboutSection {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-gap: 0; } }
+
+@media only screen and (min-width: 900px) {
+  body .stats .statsWrapper {
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); }
+  body .prices .pricingWrapper {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+    body .prices .pricingWrapper .pricing table {
+      width: 29vw; }
+  body footer .aboutSection {
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    grid-gap: 0; } }
