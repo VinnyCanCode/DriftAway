@@ -35,7 +35,16 @@ body header {
     display: flex;
     font-size: 1.1rem;
     font-weight: 500;
-    display: none; }
+    display: none;
+    animation-name: fadeInOpacity;
+    animation-timing-function: ease-in-out;
+    animation-duration: .5s; }
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
     body header .sideMenu ul {
       list-style: none; }
     body header .sideMenu li {
@@ -57,6 +66,18 @@ body header {
     body header nav .hamburgerMenu img {
       width: 2.5rem;
       height: 2.3rem; }
+    body header nav .navbar {
+      background: white;
+      padding: .5rem;
+      display: none; }
+      body header nav .navbar ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: black; }
+        body header nav .navbar ul li {
+          margin: .7rem 1rem; }
   body header .centerWrapper {
     color: white;
     display: flex;
@@ -231,6 +252,10 @@ body footer {
 @media only screen and (min-width: 600px) {
   body header .backgroundImg {
     background: url("../imgs/driftCarOne.jpeg") 15% no-repeat/cover; }
+  body header nav .hamburgerMenu {
+    display: none; }
+  body header nav .navbar {
+    display: initial; }
   body .stats .statsWrapper {
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr)); }
   body .prices .pricingWrapper {
@@ -247,6 +272,10 @@ body footer {
   body header .headerWrapper {
     clip-path: polygon(0 0, 20% 0, 42% 100%, 0% 100%);
     -webkit-clip-path: polygon(0 0, 20% 0, 42% 100%, 0% 100%); }
+  body header nav .hamburgerMenu {
+    display: none; }
+  body header nav .navbar {
+    display: initial; }
   body .stats .statsWrapper {
     grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); }
   body .prices .pricingWrapper {
