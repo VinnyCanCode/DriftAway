@@ -27,19 +27,36 @@ body header {
     z-index: -1;
     background: #41C4BF;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    clip-path: polygon(0 0, 35% 0, 57% 100%, 0% 100%); }
+    clip-path: polygon(0 0, 35% 0, 57% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 35% 0, 57% 100%, 0% 100%); }
+  body header .sideMenu {
+    background: white;
+    z-index: 1;
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: none; }
+    body header .sideMenu ul {
+      list-style: none; }
+    body header .sideMenu li {
+      margin: 4rem 0rem 4rem 2rem; }
   body header nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 1rem; }
-    body header nav .logo img {
-      width: 5rem;
-      height: 5rem; }
+    body header nav .logo {
+      display: flex;
+      line-height: 1.7rem; }
+      body header nav .logo img {
+        width: 3.5rem;
+        height: 3.5rem; }
+      body header nav .logo h1 {
+        color: white; }
     body header nav .hamburgerMenu img {
       width: 2.5rem;
-      height: 2.5rem; }
+      height: 2.3rem; }
   body header .centerWrapper {
     color: white;
     display: flex;
@@ -212,8 +229,6 @@ body footer {
       font-size: 1.1rem; }
 
 @media only screen and (min-width: 600px) {
-  html {
-    color: red; }
   body header .backgroundImg {
     background: url("../imgs/driftCarOne.jpeg") 15% no-repeat/cover; }
   body .stats .statsWrapper {
@@ -227,12 +242,11 @@ body footer {
     grid-gap: 0; } }
 
 @media only screen and (min-width: 900px) {
-  html {
-    color: blue; }
   body header .backgroundImg {
     background: url("../imgs/driftCarOne.jpeg") -50% no-repeat/cover; }
   body header .headerWrapper {
-    clip-path: polygon(0 0, 20% 0, 42% 100%, 0% 100%); }
+    clip-path: polygon(0 0, 20% 0, 42% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 20% 0, 42% 100%, 0% 100%); }
   body .stats .statsWrapper {
     grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); }
   body .prices .pricingWrapper {
